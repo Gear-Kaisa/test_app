@@ -1,0 +1,102 @@
+.fc-toolbar-title {
+    color: #20466c;
+    font-weight: 500;
+}
+.fc-event{
+    overflow: hidden;
+}
+.headerbar{
+    background-color: rgba(255,255,255,0.8);
+    backdrop-filter:  blur(8px);
+    border-radius:  10px;
+    width: calc(100% - 282px)!important;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    z-index:10;
+}
+.fc-event-encour {
+    background-color: #20466c;
+    cursor: pointer;
+    color: #eee;
+}
+
+.fc-event-encour:hover {
+    background-color: #59d0ff;
+    color: #20466c !important;
+}
+
+a.fc-daygrid-day-number {
+    color: #20466c;
+    text-decoration: none;
+}
+
+a.fc-col-header-cell-cushion {
+    color: #20466c;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(216, 216, 216, 0.658);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.password {
+    -webkit-text-security: disc;
+}
+
+.layout {
+    height: 100%;
+    width: 100%;
+    margin-left: 250px;
+    position: relative;
+
+}
+.gridview{
+    width: 90%;
+}
+.fc-event-refuse{
+    background-color: crimson;
+    cursor: pointer;
+    color: #eee;
+}
+
+.fc-event-accept{
+    background-color: #0f7002;
+    cursor: pointer;
+    color: #eee;
+}
+.fc-event-refuse:hover {
+    background-color: crimson;
+    color: #000000!important;
+}
+.fc-event-accept:hover {
+    background-color: #0f7002;
+    color: #000000!important;
+}
+.headerbar_colapse{
+    width: calc(100% - 112px)!important;
+}
+@media screen and (max-width: 1200px) {
+    .layout {
+        height: 100%;
+        width: 100%;
+        margin-left: 80px;
+    }
+    .headerbar{
+        width: calc(100% - 112px)!important;
+    }
+    .gridview{
+        width: 100%;
+        z-index: -1;
+        position: relative;
+    }
+}
+
+
