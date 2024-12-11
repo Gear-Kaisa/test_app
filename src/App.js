@@ -19,12 +19,14 @@ import { FlashOnRounded } from "@mui/icons-material";
 import Test from "./components/Test";
 
 function App() {
-  const [isloged, setIsloged] = useState(true);
+  const [isloged, setIsloged] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   return (
     <>
       {isloged ? (
         <div style={{ height: "100vh", display: "flex" }}>
-          <SideBar></SideBar>
+          {isAdmin?(
+          <SideBar></SideBar>):<></>}
           <div className="layout">
             <CardSettings></CardSettings>
             <HeaderBar />
